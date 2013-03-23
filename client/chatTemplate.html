@@ -1,0 +1,9 @@
+<template name="chatTemplate">
+<p>Enter a user name: <input id="userName" type="text" value="" /></p>
+<div style="border: 1px solid; padding: 10px; overflow-y: scroll; height: 550px">
+{{#each messages}}<pre>{{userName}}: {{message}}</pre>{{/each}}
+</div>
+<form>
+	<p>Say something:<input id="chatInput" /><input type="submit" value="Say it" /></p>
+</form>
+</template>
